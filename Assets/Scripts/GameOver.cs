@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject GameOverPanel;
     [SerializeField] private Button restartButton;
-    private void Start()
+    private void Awake()
     {
         // Asigna el evento al botón desde código
         if (restartButton != null)

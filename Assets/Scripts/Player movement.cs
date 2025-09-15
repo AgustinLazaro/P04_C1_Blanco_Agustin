@@ -11,7 +11,7 @@ public class Playermovement : MonoBehaviour
     [SerializeField] private float fallRotationSpeed = 200f; // Velocidad de rotación al caer
     [SerializeField] private float gravityScale = 2f; // Gravedad personalizada
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = gravityScale; // Aplica la gravedad personalizada

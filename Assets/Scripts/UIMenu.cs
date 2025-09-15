@@ -9,7 +9,7 @@ public class UIMenu : MonoBehaviour
     [SerializeField] private GameObject StartPanel;
     [SerializeField] private Button StartButton;
 
-    private void Start()
+    private void Awake()
     {
         if (StartButton != null)
         {
